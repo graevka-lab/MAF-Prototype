@@ -4,7 +4,7 @@ Author: graevka-lab
 
 NOTE: This is not production code. It is a conceptual blueprint in 
 executable form, designed to demonstrate architectural principles.
-For the full paradigm, see: https://github.com/graevka-lab/The-Resonance-Protocols
+For the full paradigm, see: https://github.com/graevka-lab/Metacognitive-Alignment-Framework
 """
 
 import json
