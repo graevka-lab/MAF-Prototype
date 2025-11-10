@@ -32,4 +32,4 @@ This will run a series of simulated "traces" and print the evaluation results to
 The Bigger Picture
 This prototype is the "Body". The "Soul" of the project—its full philosophical and theoretical rationale—resides in the main research repository. We strongly recommend starting there to understand the "why" behind this code.
 
-[➡️ Explore The Resonance Protocols Here] (https://github.com/graevka-lab/Metacognitive-Alignment-Framework)
+➡️ [Explore The Resonance Protocols Here] (https://github.com/graevka-lab/Metacognitive-Alignment-Framework)
