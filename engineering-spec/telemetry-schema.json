@@ -1,0 +1,51 @@
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MAF Trace Telemetry Schema",
+  "description": "Defines the structure of a single cognitive trace object used in the Metacognitive Alignment Framework.",
+  "type": "object",
+  "properties": {
+    "trace_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "A unique identifier for this specific trace."
+    },
+    "input_text": {
+      "type": "string",
+      "description": "The original input or prompt that initiated the cognitive cycle."
+    },
+    "output_text": {
+      "type": "string",
+      "description": "The final generated text output from the cognitive engine."
+    },
+    "anomalies": {
+      "type": "array",
+      "description": "A list of detected anomalies or cognitive distortions.",
+      "items": {
+        "type": "string",
+        "examples": ["uncertain_assertion", "hedging_language", "unsupported_claim"]
+      }
+    },
+    "charter_status": {
+      "type": "string",
+      "description": "The final compliance status of the trace against the Charter.",
+      "enum": ["COMPLIANT", "VIOLATED", "unchecked"]
+    },
+    "violations": {
+      "type": "array",
+      "description": "A list of specific Charter rule IDs that were violated.",
+      "items": {
+        "type": "string",
+        "examples": ["R1_ANOMALY_LIMIT", "R2_FORBIDDEN_TERM:manipulation"]
+      }
+    }
+  },
+  "required": [
+    "trace_id",
+    "input_text",
+    "output_text",
+    "anomalies",
+    "charter_status",
+    "violations"
+  ]
+}
